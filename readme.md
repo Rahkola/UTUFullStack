@@ -1,0 +1,1 @@
+[![Build Status](https://progman-sws.visualstudio.com/UTU Full-stack/_apis/build/status/Rahkola.UTUFullStack?branchName=master)](https://progman-sws.visualstudio.com/UTU Full-stack/_build/latest?definitionId=33&branchName=master)
