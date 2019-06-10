@@ -1,0 +1,22 @@
+{
+  "name": "utu-full-stack",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://progman-sws.visualstudio.com/UTU Full-stack/_apis/build/status/Rahkola.UTUFullStack?branchName=master)](https://progman-sws.visualstudio.com/UTU Full-stack/_build/latest?definitionId=33&branchName=master)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahkola/UTUFullStack.git"
+  },
+  "author": "sami viitala & kalle kettunen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rahkola/UTUFullStack/issues"
+  },
+  "homepage": "https://github.com/Rahkola/UTUFullStack#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
