@@ -10,9 +10,6 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - task: Npm@1
   inputs:
     command: 'install'
@@ -21,12 +18,6 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'test'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-  
 
 - task: CopyFiles@2
   inputs:
