@@ -19,16 +19,22 @@ const getEmployee = (id, callback) => $.get(`http://dummy.restapiexample.com/api
 
 /**
  * Create new record in database
- * @param {{"name":"test","salary":"123","age":"23","id":"719"}} employee Employee information
+ * @param {{"employee_name":"test","salary":"123","age":"23","id":"719"}} employee Employee information
  */
-const createEmployee = (employee) => $.post('http://dummy.restapiexample.com/api/v1/create', employee, data => {
-  callback(data);
-});
+const createEmployee = (employee, callback) => $.ajax({
+  url:'http://dummy.restapiexample.com/api/v1/create',
+  type:"POST",
+  data:employee,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  success: data => {
+    callback(data);
+  }});
 
 /**
  * Update an employee record
  * @param {number} id Employee id
- * @param {{"name":"test","salary":"123","age":"23","id":"719"}} employee Employee information
+ * @param {{"employee_name":"test","salary":"123","age":"23","id":"719"}} employee Employee information
  */
 const updateEmployee = (id, employee) => $.put(`http://dummy.restapiexample.com/api/v1/update/${id}`, employee, data => {
   callback(data);
