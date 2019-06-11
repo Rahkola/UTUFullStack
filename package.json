@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Rahkola/UTUFullStack#readme",
   "devDependencies": {
     "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "js-md5": "^0.7.3"
   }
 }
