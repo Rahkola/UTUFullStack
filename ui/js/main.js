@@ -1,8 +1,9 @@
 // api.js included in index.html and the functions available in global namespace
 
+
 const updateEmployeesDOM = (employees) => {
-  //$("#employees").html(employees);
-  JSON.parse(employees).forEach(function (val){$('#elist').append('<li>'+val.employee_name+'</li>')});
+  JSON.parse(employees).forEach(function (val){$('#elist').append('<li>'+
+    '<span>' + val.employee_name+'</span><img a src="https://www.gravatar.com/avatar/'+md5(val.employee_name)+'?d=identicon"></li>')});
 }
 
 // // API usage examples
@@ -16,7 +17,7 @@ let employees;
 const onGetEmployeesButtonClick = () => {
   getEmployees(data => {
     updateEmployeesDOM(data);
-  })  
+  })
 }
 
 const onClearEmployeesButtonClick = () => {
